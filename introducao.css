@@ -1,0 +1,58 @@
+.container-introducao{
+  background-image: url(img/use-svg-as-background-image-particle-strokes.svg);
+
+}
+
+
+
+.introducao{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 150px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: center;
+  padding: 200px 0;
+}
+
+.texto-principal{
+  font-size: 4rem;
+  position: relative;
+  color: #E8E5DE;
+}
+
+
+.subtexto{
+  font-size: 1.3rem;
+  text-align: end;
+  padding-top: 20px;
+  color: #E8E5DE;
+}
+
+.texto-principal::before{
+  content: "";
+  display: block;
+  width: 128px;
+  height: 128px;
+  background: url(img/deco.svg) no-repeat center;
+  position: absolute;
+  top: -50px;
+  left: -40px;
+  z-index: -1;
+}
+
+@media (max-width: 1120px){
+  .texto-principal{
+    font-size: 3rem;
+  } 
+}
+
+@media (max-width: 840px){
+  .introducao{
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
